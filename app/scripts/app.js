@@ -27,6 +27,11 @@ angular
       .when('/projects/day1', {
           templateUrl: 'views/projects/day1.html'
       })
+      .when('/projects/day2', {
+          templateUrl: 'views/projects/day2.html',
+          controller: 'day2Ctrl',
+          controllerAs: 'day2'
+      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
