@@ -1,0 +1,57 @@
+.day-one{
+  background: #5eaebd;
+  width: 500px;
+  padding: 50px;
+}
+
+.title{
+  font-size: 90px;
+  font-family: 'Cookie', cursive;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
+.item{
+  background: #e55684;
+  margin-bottom: 5px;
+  margin-left: -38px;
+  font-size: 24px;
+  font-family: 'Cookie', cursive;
+  color: white;
+  list-style: none;
+  clear: both;
+  padding: 15px 28px 15px 28px;
+  cursor: pointer;
+}
+
+.dollar{
+  float: right;
+}
+
+.item-selected{
+  background: #8ec16d;
+}
+
+.total{
+  font-size: 24px;
+  font-family: 'Cookie', cursive;
+  color: #404040;
+  font-weight: normal;
+  border-top: solid 1px white;
+  padding: 10px;
+}
+
+.total-right{
+  float: right;
+}
+
+.search-box {
+  width: 200px;
+  height: 30px;
+  border: solid 6px #5A99B5;
+  padding: 10px;
+  font-size: 20px;
+  margin: auto 130px;
+  border: solid 1px #404040;
+}

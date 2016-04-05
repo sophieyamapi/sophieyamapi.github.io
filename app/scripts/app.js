@@ -32,6 +32,11 @@ angular
           controller: 'day2Ctrl',
           controllerAs: 'day2'
       })
+      .when('/projects/day3', {
+          templateUrl: 'views/projects/day3.html',
+          controller: 'day3Ctrl',
+          controllerAs: 'day3'
+      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',

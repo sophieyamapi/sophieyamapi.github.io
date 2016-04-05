@@ -1,0 +1,17 @@
+<h1>Sophie's github io, hello 123</h1>
+<div class="day-one">
+<h1 class="title">Day 3</h1>
+<div class="price">
+	<input type="text" class="search-box" placeholder="search for food..." ng-model="searchTerm"></input>
+	<ul class="list">
+		<div ng-repeat="item in products">
+			<li class="item"
+	   			ng-show="item.show"
+				ng-click="selectItem($index)"
+				ng-class="{'item-selected': item.selected}">{{item.name}}<span class="dollar">${{item.price}}</span>
+			</li>
+   		</div>
+	</ul>
+</div>
+</div>
+
