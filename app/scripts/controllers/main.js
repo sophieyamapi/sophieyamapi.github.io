@@ -7,11 +7,5 @@
  * # MainCtrl
  * Controller of the sophieyamapigithubioApp
  */
-angular.module('sophieyamapigithubioApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+angular.module('sophieyamapigithubioApp').controller('MainCtrl', function () {
+});
