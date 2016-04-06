@@ -17,9 +17,9 @@ angular.module('sophieyamapigithubioApp', [
     'ngTouch'
 ]).config(function ($routeProvider) {
     $routeProvider.when('/', {
-            templateUrl: 'views/main.html',
-            controller: 'MainCtrl',
-            controllerAs: 'main'
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
     }).when('/projects/day1', {
         templateUrl: 'views/projects/day1.html'
     })
@@ -32,6 +32,11 @@ angular.module('sophieyamapigithubioApp', [
         templateUrl: 'views/projects/day3.html',
         controller: 'day3Ctrl',
         controllerAs: 'day3'
+    })
+    .when('/projects/day4', {
+        templateUrl: 'views/projects/day4.html',
+        controller: 'day4Ctrl',
+        controllerAs: 'day4'
     })
     .when('/about', {
         templateUrl: 'views/about.html',

@@ -1,0 +1,10 @@
+<div day-title></div>
+
+<div class="timer">
+    <input class="timer-input" type="text" ng-model="input"></input>
+    <button class="timer-button" ng-click="startCount()">Start</button>
+</div>
+
+<div class="count-down" ng-show="counter > 0">
+    {{counter}}
+</div>

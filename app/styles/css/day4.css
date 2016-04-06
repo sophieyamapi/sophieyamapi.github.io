@@ -1,0 +1,33 @@
+.timer {
+    text-align: center;
+}
+
+.timer-input {
+    margin: 10% auto;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    color: #404040;
+}
+
+.timer-button {
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid #404040;
+    background: #FFFFFF;
+    margin-left: 10px;
+}
+
+.count-down {
+    text-align: center;
+    font-size: 50px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #404040;
+    border-radius: 9999px;
+    line-height: 150px;
+    margin: 0 auto;
+    font-family: 'Verdana';
+}
+
