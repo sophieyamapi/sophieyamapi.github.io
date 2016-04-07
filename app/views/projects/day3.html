@@ -1,0 +1,31 @@
+<h1>Sophie's github io, hello 123</h1>
+<div class="day-one">
+<h1 class="title">Day 3</h1>
+
+<div class="search">
+	<input type="text" placeholder="search for food..." class="search-input" ng-model="searchBox"></input>
+</div> <!-- div search -->
+
+<div class="filter">
+	<button class="dropbtn1" ng-click="selectRange1()">0 - 6</button>
+	<button class="dropbtn2" ng-click="selectRange2()">7 - 13</button>
+	<button class="dropbtn3" ng-click="selectRange3()">14 - 20</button>
+</div> <!-- div filter -->
+
+<div class="price">
+	<ul class="list">
+		<div ng-repeat="item in products">
+			<li class="item" 
+			ng-click="selectItem($index)" 
+			ng-class="{'item-selected': item.selected}"
+			ng-show="item.show">{{item.name}}<span class="dollar">${{item.price}}</span></li>
+   		</div>
+	</ul>
+	<div class="total">
+		<span class="total-left">Total</span>
+		<span class="total-right">{{totalPrice}}</span>
+	</div>
+</div> <!-- div price -->
+
+</div> <!-- div day-one -->
+

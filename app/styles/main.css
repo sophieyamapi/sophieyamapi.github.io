@@ -1,1 +1,73 @@
+.navigation{
+	position: relative;
+	margin: 2% auto 0;
+}
+
+.nav-menu{
+	height: 25px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+
+.item-left{
+	float: left;
+	width: 180px;
+	height: 25px;
+
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #111111;
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.item-left a{
+	text-decoration: none;
+	color: #111111;
+}
+
+
+.item-right{
+	float: right;
+	margin: 0 auto;
+}
+
+.menu-item{
+	display: inline;
+	width: auto;
+	margin-left: 35px; 
+
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #111111;
+	font-weight: 500;
+	font-size: 12px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.menu-item a{
+	text-decoration: none;
+	color: #111111;
+}
+
+.welcome{
+	position: relative;
+	width: 70%;
+	margin: 180px auto 0;
+}
+
+.welcome-title{
+    margin-left: -5px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #111111;
+	font-weight: 600;
+	font-size: 110px;
+	line-height: 100px;
+	text-align: left;
+}
+
 
