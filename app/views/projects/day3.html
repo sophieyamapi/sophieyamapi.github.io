@@ -1,15 +1,22 @@
-<h1>Sophie's github io, hello 123</h1>
+<div day-title></div>
 <div class="day-one">
 <h1 class="title">Day 3</h1>
 
 <div class="search">
-	<input type="text" placeholder="search for food..." class="search-input" ng-model="searchBox"></input>
+	<input type="text" placeholder="Search for food..." class="search-input" ng-model="searchBox"></input>
 </div> <!-- div search -->
 
-<div class="filter">
+<!--<div class="filter">
 	<button class="dropbtn1" ng-click="selectRange1()">0 - 6</button>
 	<button class="dropbtn2" ng-click="selectRange2()">7 - 13</button>
 	<button class="dropbtn3" ng-click="selectRange3()">14 - 20</button>
+</div> -->
+
+<div class="filter">
+	<label for="singleSelect">Filter by price:</label>
+	<select id="singleSelect" ng-model="dropdownSelect" ng-options="price for price in priceArray">
+		<option value="">---Please select---</option>
+	</select>
 </div> <!-- div filter -->
 
 <div class="price">

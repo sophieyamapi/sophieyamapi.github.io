@@ -68,38 +68,87 @@ angular.module('sophieyamapigithubioApp').controller('day3Ctrl', [
       });
 
 
-     $scope.selectRange1 = function() {
-        for (var i = 0; i < food.length; i++) {
-          if (food[i].price >6) {
-            food[i].show = false;
-          }
-          else{
+     // $scope.selectRange1 = function() {
+     //    for (var i = 0; i < food.length; i++) {
+     //      if (food[i].price >6) {
+     //        food[i].show = false;
+     //      }
+     //      else{
+     //        food[i].show = true;
+     //      }
+     //    }
+     //  };
+
+     //  $scope.selectRange2 = function() {
+     //    for (var i = 0; i < food.length; i++) {
+     //      if (food[i].price < 7 || food[i].price > 13) {
+     //        food[i].show = false;
+     //      }
+     //      else{
+     //        food[i].show = true;
+     //      }
+     //    }
+     //  };
+
+     //  $scope.selectRange3 = function() {
+     //    for (var i = 0; i < food.length; i++) {
+     //      if (food[i].price < 14 || food[i].price > 20) {
+     //        food[i].show = false;
+     //      }
+     //      else{
+     //        food[i].show = true;
+     //      }
+     //    }
+     //  };
+
+
+      $scope.priceArray = ["0-6", "7-13", "14-20"];
+
+
+      var filterMatch = function() {
+        if ($scope.dropdownSelect === null) {
+          for (var i = 0; i < food.length; i++) {
             food[i].show = true;
+          }
+        }
+        
+        if ($scope.dropdownSelect === $scope.priceArray[0]) {
+          for (var i = 0; i < food.length; i++) {
+            if (food[i].price >6) {
+              food[i].show = false;
+            }
+            else {
+            food[i].show = true;
+            }
+          }
+        }
+
+        if ($scope.dropdownSelect === $scope.priceArray[1]) {
+          for (var i = 0; i < food.length; i++) {
+            if (food[i].price < 7 || food[i].price > 13) {
+              food[i].show = false;
+            }
+            else {
+            food[i].show = true;
+            }
+          }
+        }
+
+        if ($scope.dropdownSelect === $scope.priceArray[2]) {
+          for (var i = 0; i < food.length; i++) {
+            if (food[i].price < 14 || food[i].price > 20) {
+              food[i].show = false;
+            }
+            else {
+            food[i].show = true;
+            }
           }
         }
       };
 
-      $scope.selectRange2 = function() {
-        for (var i = 0; i < food.length; i++) {
-          if (food[i].price < 7 || food[i].price > 13) {
-            food[i].show = false;
-          }
-          else{
-            food[i].show = true;
-          }
-        }
-      };
-
-      $scope.selectRange3 = function() {
-        for (var i = 0; i < food.length; i++) {
-          if (food[i].price < 14 || food[i].price > 20) {
-            food[i].show = false;
-          }
-          else{
-            food[i].show = true;
-          }
-        }
-      };
+      $scope.$watch('dropdownSelect', function(){
+        filterMatch();
+      });
 
   }
 ]);

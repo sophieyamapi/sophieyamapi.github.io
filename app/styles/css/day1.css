@@ -50,5 +50,53 @@
   height: 36px;
   width: 250px;
   font-size: 15px;
+  font-family: 'Cookie', cursive;
+  color: #666666;
 }
+
+.timer{
+  margin: 80px;
+}
+
+.input-box{
+  padding: 15px;
+  width: 250px;
+  font-size: 15px;
+  background: #ffffff;
+  border: solid 2px #cccccc;
+}
+
+.button-start{
+  padding: 15px;
+  width: 100px;
+  font-size: 15px;
+  background: #ffffff;
+}
+
+.button-stop{
+  padding: 15px;
+  width: 100px;
+  font-size: 15px;
+  color: white;
+  background: #000000;
+}
+
+.count{
+  border: solid 1px #cccccc;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  border-radius: 9999px;
+  font-size: 25px;
+  margin: auto;
+}
+
+.filter{
+  margin: 20px auto;
+  font-family: 'Cookie', cursive;
+  font-size: 15px;
+  color: white;
+}
+
 
