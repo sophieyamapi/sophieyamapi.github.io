@@ -12,10 +12,13 @@ angular.module('sophieyamapigithubioApp').controller('day4Ctrl', [
         return;
       }
       $scope.counter -= 1;
-      promise = $timeout($scope.count, 1000);      
+      promise = $timeout($scope.count, 1000);    
     };
 
     $scope.start = function() {
+      if ($scope.counter != $scope.input) {
+        $timeout.cancel(promise);
+      }
       $scope.counter = $scope.input;
       $scope.count();
     };
