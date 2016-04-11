@@ -1,0 +1,9 @@
+<h1>Infinite records</h1>
+
+<div ng-repeat="record in infinite.records track by $index">
+    <div class="single-record">{{record}}</div>
+</div>
+
+<div class="next" ng-click="loadMore()">&#9660</div>
+
+<div ng-show="infinite.showGoUpButton" class="go-up" ng-click="goUp()">&#9650</div>

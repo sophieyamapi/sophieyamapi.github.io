@@ -38,6 +38,9 @@ angular.module('sophieyamapigithubioApp', [
         controller: 'day4Ctrl',
         controllerAs: 'day4'
     })
+    .when('/projects/day5', {
+        templateUrl: 'views/projects/day5.html'
+    })
     .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
