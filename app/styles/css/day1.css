@@ -99,4 +99,51 @@
   color: white;
 }
 
+.record{
+  margin: 5px;
+  background: #e5e5e5;
+  border: solid 1px #cccccc;
+  text-align: center;
+  line-height: 40px;
+}
+
+.record-expand{
+  height: 150px;
+  -webkit-transition: height 1s;
+ }
+
+.record-font{
+  font-family: 'Cookie', cursive;
+  font-size: 15px;
+  color: #404040;
+}
+
+.showButton{
+  width: 40px;
+  height: 40px;
+  border: solid 1px #cccccc;
+  border-radius: 9999px;
+  background: #e5e5e5;
+  text-align: center;
+  line-height: 45px;
+  margin: 20px auto;
+  color: #404040;
+}
+
+.backButton{
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  width: 40px;
+  height: 40px;
+  border: solid 1px #cccccc;
+  border-radius: 9999px;
+  background: #e5e5e5;
+  text-align: center;
+  line-height: 45px;
+  color: #404040;
+}
+
+
+
 
