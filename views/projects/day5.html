@@ -1,0 +1,14 @@
+<infinite-record></infinite-record>
+
+
+<div class="record" ng-repeat="record in records track by $index" ng-click="expandRecord(record)" ng-class="{'record-expand': record.selected}">
+	<span class="record-font">Record Number {{record.value}}</span>
+</div>
+
+<div class="showRecord">
+	<div class="showButton" ng-click="showRecord()">&#9660</div>
+</div>
+
+
+<div class="backButton" ng-show="showBackbutton" ng-click="goUp()">&#9650</div>
+
